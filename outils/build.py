@@ -161,7 +161,7 @@ def real_detail(c, all_items, cta):
 {real_facts(c)}
 <div class="btns"><a class="btn btn-primary" href="#devis">Un projet similaire ? Devis gratuit</a><a class="btn btn-outline" href="#photos">Voir les photos</a></div>
 </div>
-<a class="hero-media" href="{media(c["photos"][0])[1]}" data-lb-open="0">{img(c["photos"][0], t, "media media-hero", "(max-width: 900px) 100vw, 600px", lazy=False)}</a>
+<a class="hero-media" href="{media(c["photos"][0])[1]}" data-lb-open="0">{img(c["photos"][0], t, "media media-hero", "(max-width: 760px) calc(100vw - 48px), (max-width: 900px) 100vw, 600px", lazy=False)}</a>
 </div></div></section>
 <section class="section-sm" id="photos"><div class="wrap stack-lg">
 <h2 class="h2">Photos du chantier</h2>
@@ -226,6 +226,9 @@ def post_card(a, tag="h2"):
 
 def render_body(md_text):
     body = markdown.markdown(md_text or "", extensions=["tables", "sane_lists"], output_format="html")
+    # la page a déjà son titre (H1) : un grand titre en tête du texte est retiré, les autres deviennent des H2
+    body = re.sub(r"^\s*<h1>.*?</h1>\s*", "", body, count=1, flags=re.S)
+    body = re.sub(r"<(/?)h1>", r"<\1h2>", body)
     # espaces insécables entre un nombre et son unité (« 72 h », « 120 €/m² »)
     body = re.sub(r">[^<]*", lambda m: re.sub(r"(\d) (h|ans|m²|€|cm|min|jours?|semaines?)\b", "\\1\u00a0\\2", m.group(0)), body)
     return body.replace("<table>", '<div class="tbl-box"><table>').replace("</table>", "</table></div>")
@@ -237,7 +240,7 @@ def post_detail(a, all_items, cta):
     fig = ""
     if a.get("image"):
         cap = f'<figcaption class="muted">{e(a["legende"])}</figcaption>' if a.get("legende") else ""
-        fig = f'<div class="wrap narrow"><figure>{img(a["image"], a.get("legende") or a["titre"], "media media-wide", "(max-width: 900px) 100vw, 760px", lazy=False)}{cap}</figure></div>'
+        fig = f'<div class="wrap narrow"><figure>{img(a["image"], a.get("legende") or a["titre"], "media media-wide", "(max-width: 760px) calc(100vw - 48px), 760px", lazy=False)}{cap}</figure></div>'
     others = [o for o in all_items if o is not a][:3]
     autres = "" if not others else (f'<section class="section-sm white"><div class="wrap stack-lg">\n<h2 class="h2">À lire aussi</h2>\n'
                                     f'<div class="grid swipe">{"".join(post_card(o, "h3") for o in others)}</div>\n</div></section>')
