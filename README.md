@@ -14,7 +14,7 @@ Site vitrine d'Alpha Isolation (ALGO FAÇADE SRL, Courcelles) : HTML et CSS stat
 - `img/uploads/` : fichiers envoyés via le CMS · `img/gen/` : versions optimisées créées au build (non versionnées)
 - `_modeles/og-image.html` : source de l'image de partage `img/og-alpha-isolation.jpg`
 - `netlify.toml` : build, redirections des anciennes URLs WordPress, en-têtes HTTP
-- `A-COMPLETER.md` : contenus en attente du client
+- `A-COMPLETER.md` : contenus en attente du client (notes internes, gardées en local et exclues du dépôt)
 
 ## Utiliser le CMS
 Aller sur **https://www.alphaisolation.be/admin/** et se connecter avec GitHub.
