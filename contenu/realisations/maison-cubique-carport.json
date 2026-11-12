@@ -1,0 +1,23 @@
+{
+  "titre": "Maison cubique avec carport",
+  "publie": true,
+  "ordre": 40,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi blanc",
+    "Enduit sous plafond"
+  ],
+  "resume": "Volume blanc et carport intégré, enduit jusque sous le plafond du passage couvert.",
+  "description": "Une maison cubique avec carport intégré. La finition blanche a été prolongée sous le plafond du passage couvert pour une continuité parfaite entre les volumes.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/crepis-de-facade-moderne.webp",
+    "/img/photos/entreprise-facade-sur-mesure.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

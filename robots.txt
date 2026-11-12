@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /_modeles/
+Disallow: /admin/
+Disallow: /merci.html
+
+Sitemap: https://www.alphaisolation.be/sitemap.xml

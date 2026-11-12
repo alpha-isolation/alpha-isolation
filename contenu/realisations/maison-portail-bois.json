@@ -1,0 +1,20 @@
+{
+  "titre": "Maison avec portail en bois",
+  "publie": true,
+  "ordre": 120,
+  "categorie": "ite",
+  "travaux": [
+    "Crépi blanc"
+  ],
+  "resume": "Façade blanche et portail en bois, pour un ensemble sobre et chaleureux.",
+  "description": "Une façade en crépi blanc qui s'accorde avec le portail et la clôture en bois. Un ensemble sobre et lumineux.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/finition-haut-de-gamme-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

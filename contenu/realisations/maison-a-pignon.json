@@ -1,0 +1,21 @@
+{
+  "titre": "Maison à pignon",
+  "publie": true,
+  "ordre": 130,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi blanc"
+  ],
+  "resume": "Une maison à étage et pignon, entièrement crépie en blanc.",
+  "description": "Une maison traditionnelle à pignon, isolée par l'extérieur et finie en crépi blanc, du socle jusqu'à la toiture.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/restauration-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

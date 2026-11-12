@@ -1,0 +1,22 @@
+{
+  "titre": "Maison mitoyenne avec garage",
+  "publie": true,
+  "ordre": 100,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi clair"
+  ],
+  "resume": "Une maison de rangée remise au goût du jour avec un crépi clair.",
+  "description": "Sur cette maison mitoyenne, la façade a été isolée puis finie en crépi clair. Les menuiseries anthracite ressortent nettement et la maison change complètement d'allure dans la rue.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/entreprise-de-design-de-facade.webp",
+    "/img/photos/renovation-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

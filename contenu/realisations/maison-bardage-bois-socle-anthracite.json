@@ -1,0 +1,27 @@
+{
+  "titre": "Maison à bardage bois et socle anthracite",
+  "publie": true,
+  "ordre": 60,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi blanc",
+    "Socle anthracite"
+  ],
+  "resume": "Isolation par l'extérieur avec crépi blanc, socle anthracite et détails en bois.",
+  "description": "Sur ce chantier, l'isolant a été posé sur toutes les façades puis fini en crépi blanc. En pied de mur, un socle anthracite protège le bas de la façade des éclaboussures et souligne la maison. Les photos ont été prises en fin de chantier, avant l'aménagement des abords.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/isolation-thermique.webp",
+    "/img/photos/isolation-facade-1.webp",
+    "/img/photos/isolation-facade.webp",
+    "/img/photos/isolation-de-facade-1.webp",
+    "/img/photos/finition-facade.webp",
+    "/img/photos/finition-de-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

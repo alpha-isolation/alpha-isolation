@@ -1,0 +1,138 @@
+# Site statique. Le build génère les pages gérées par le CMS (réalisations, conseils) depuis contenu/.
+# Netlify installe automatiquement requirements.txt (Pillow, Markdown).
+[build]
+  command = "python outils/build.py"
+  publish = "."
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+# --- Anciennes URLs du site WordPress -> nouvelles pages (conserve le référencement) ---
+[[redirects]]
+  from = "/nos-services"
+  to = "/#services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nos-services/isolation-thermique-exterieure-ite"
+  to = "/isolation-facade-exterieur.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nos-services/crepis-de-facade"
+  to = "/crepi-facade.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nos-services/renovation-et-embellissement-de-facade"
+  to = "/renovation-facade.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nos-realisations"
+  to = "/realisations.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nous-contacter"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/politique-vie-privee"
+  to = "/confidentialite.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-sitemap.xml"
+  to = "/sitemap.xml"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sitemap_index.xml"
+  to = "/sitemap.xml"
+  status = 301
+  force = true
+
+# Anciennes images WordPress et pages techniques : renvoyées vers l'accueil
+[[redirects]]
+  from = "/wp-content/*"
+  to = "/realisations.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-admin/*"
+  to = "/"
+  status = 301
+  force = true
+
+# Modèles internes : jamais publiés
+[[redirects]]
+  from = "/_modeles/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/contenu/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/outils/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/A-COMPLETER.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# --- En-têtes ---
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

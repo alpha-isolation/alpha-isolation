@@ -1,0 +1,22 @@
+{
+  "titre": "Commerce « Tartine & Gourmandise »",
+  "publie": true,
+  "ordre": 80,
+  "categorie": "renov",
+  "travaux": [
+    "Rénovation de façade",
+    "Crépi"
+  ],
+  "resume": "Façade d'un commerce rénovée, côté rue et côté parking.",
+  "description": "Pour ce commerce, la façade côté rue et la façade arrière ont été remises à neuf. Une façade propre et claire met en valeur la vitrine et l'enseigne.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/entreprise-habillage-de-facade.webp",
+    "/img/photos/embellissement-facade-commeciale.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

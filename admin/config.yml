@@ -1,0 +1,123 @@
+# Decap CMS : administration des réalisations et des conseils (blog).
+# Chaque enregistrement crée un commit sur GitHub ; Netlify reconstruit alors le site (python outils/build.py).
+
+backend:
+  name: github
+  repo: alpha-isolation/alpha-isolation
+  branch: main
+  commit_messages:
+    create: "Ajout {{collection}} : {{slug}}"
+    update: "Mise à jour {{collection}} : {{slug}}"
+    delete: "Suppression {{collection}} : {{slug}}"
+    uploadMedia: "Ajout média : {{path}}"
+    deleteMedia: "Suppression média : {{path}}"
+
+# En local : lancer « npx decap-server » à la racine du projet, puis ouvrir http://localhost:8765/admin/
+local_backend: true
+
+locale: fr
+site_url: https://www.alphaisolation.be
+display_url: https://www.alphaisolation.be
+logo_url: /img/logo-alpha-isolation.webp
+publish_mode: simple
+
+media_folder: img/uploads
+public_folder: /img/uploads
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: realisations
+    label: Réalisations
+    label_singular: réalisation
+    description: "Un chantier = une fiche. La première photo sert de couverture. Les champs vides (commune, année…) ne s'affichent pas sur le site."
+    folder: contenu/realisations
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: titre
+    summary: "{{titre}}"
+    sortable_fields: [ordre, titre]
+    fields:
+      - { label: Titre, name: titre, widget: string, hint: "Ex. : Maison mitoyenne avec garage" }
+      - { label: Publié sur le site, name: publie, widget: boolean, default: true }
+      - { label: Ordre d'affichage, name: ordre, widget: number, value_type: int, default: 100, hint: "Plus petit = affiché en premier" }
+      - label: Catégorie
+        name: categorie
+        widget: select
+        default: ite
+        options:
+          - { label: "Isolation & crépi", value: ite }
+          - { label: "Rénovation & nettoyage", value: renov }
+      - label: Travaux réalisés
+        name: travaux
+        widget: list
+        field: { label: Travail, name: travail, widget: string }
+        hint: "Ex. : Isolation par l'extérieur, Crépi blanc"
+      - { label: Résumé (carte), name: resume, widget: text, hint: "Une ou deux phrases, affichées sur la carte du chantier" }
+      - { label: Description (fiche), name: description, widget: text }
+      - { label: Commune, name: commune, widget: string, required: false }
+      - { label: Année, name: annee, widget: string, required: false, hint: "Ex. : 2026" }
+      - { label: Surface, name: surface, widget: string, required: false, hint: "Ex. : 180 m²" }
+      - { label: Durée du chantier, name: duree, widget: string, required: false, hint: "Ex. : 3 semaines" }
+      - label: Photos
+        name: photos
+        widget: list
+        min: 1
+        field: { label: Photo, name: photo, widget: image }
+        hint: "JPG ou PNG depuis le téléphone : le site crée lui-même les versions optimisées."
+      - label: Vidéos (fichiers)
+        name: videos
+        widget: list
+        required: false
+        field: { label: Vidéo MP4, name: video, widget: file }
+        hint: "Vidéos courtes uniquement (quelques Mo). Pour une vidéo longue, utilisez YouTube ci-dessous."
+      - label: Vidéos YouTube
+        name: youtube
+        widget: list
+        required: false
+        field: { label: Lien YouTube, name: lien, widget: string }
+
+  - name: conseils
+    label: Conseils (blog)
+    label_singular: article
+    description: "Statut « Publié » : visible sur le site. « À venir » : annoncé sur la page Conseils sans lien. « Brouillon » : invisible."
+    folder: contenu/conseils
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: titre
+    summary: "{{titre}} ({{statut}})"
+    sortable_fields: [date, titre]
+    fields:
+      - { label: Titre, name: titre, widget: string }
+      - label: Statut
+        name: statut
+        widget: select
+        default: brouillon
+        options:
+          - { label: Publié, value: publie }
+          - { label: À venir (annoncé), value: a-venir }
+          - { label: Brouillon (invisible), value: brouillon }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, picker_utc: true }
+      - label: Catégorie
+        name: categorie
+        widget: select
+        options: [Isolation, Crépi, Rénovation, Primes, Prix, Démarches, Entretien]
+      - { label: Résumé, name: resume, widget: text, hint: "Affiché sous le titre et dans Google (environ 150 caractères)" }
+      - { label: Image principale, name: image, widget: image, required: false }
+      - { label: Légende de l'image, name: legende, widget: string, required: false }
+      - label: Texte de l'article
+        name: corps
+        widget: markdown
+        required: false
+        buttons: [bold, italic, link, heading-two, heading-three, quote, bulleted-list, numbered-list]
+        editor_components: [image]
+        hint: "Titres de section en « Titre 2 ». Une citation s'affiche comme un encadré vert."

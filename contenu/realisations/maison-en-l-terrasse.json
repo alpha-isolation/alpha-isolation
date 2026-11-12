@@ -1,0 +1,24 @@
+{
+  "titre": "Maison en L avec terrasse",
+  "publie": true,
+  "ordre": 20,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi blanc"
+  ],
+  "resume": "Façades en crépi blanc autour d'une terrasse intérieure, avec toiture plate.",
+  "description": "Une maison en L organisée autour de sa terrasse. Toutes les façades ont été isolées et finies en crépi blanc, y compris les retours et les acrotères de la toiture plate.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/entreprise-de-renovation-de-facade.webp",
+    "/img/photos/conception-de-facade-sur-mesure.webp",
+    "/img/photos/renovation-de-facade.webp",
+    "/img/photos/design-de-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

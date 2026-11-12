@@ -1,0 +1,24 @@
+{
+  "titre": "Volume cubique en crépi blanc",
+  "publie": true,
+  "ordre": 30,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi blanc"
+  ],
+  "resume": "Une architecture cubique toute en crépi blanc, avec une grande fenêtre verticale.",
+  "description": "Sur cette maison aux volumes cubiques, le crépi blanc souligne l'architecture. Les grandes surfaces sans joint demandent une pose régulière pour un rendu uniforme, de près comme de loin.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/crepis-facade.webp",
+    "/img/photos/facade-sur-mesure.webp",
+    "/img/photos/professionnel-de-facade-sur-mesure.webp",
+    "/img/photos/professionnel-renovation-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

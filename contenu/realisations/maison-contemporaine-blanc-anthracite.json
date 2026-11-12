@@ -1,0 +1,24 @@
+{
+  "titre": "Maison contemporaine blanc et anthracite",
+  "publie": true,
+  "ordre": 10,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi blanc",
+    "Entretien de façade"
+  ],
+  "resume": "Une maison contemporaine aux lignes droites : enduit blanc lisse à l'étage, rez-de-chaussée vitré en anthracite.",
+  "description": "Sur cette maison contemporaine, l'étage a reçu une finition en crépi blanc lisse qui contraste avec le rez-de-chaussée anthracite et les grandes baies vitrées. Les angles et les encadrements de fenêtres ont été traités avec soin pour garder des lignes parfaitement nettes.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/conception-de-facade-moderne.webp",
+    "/img/photos/entreprise-de-conception-de-facade.webp",
+    "/img/photos/embellissement-de-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

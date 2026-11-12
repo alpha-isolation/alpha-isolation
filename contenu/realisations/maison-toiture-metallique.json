@@ -1,0 +1,22 @@
+{
+  "titre": "Maison à toiture métallique",
+  "publie": true,
+  "ordre": 50,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi blanc"
+  ],
+  "resume": "Façade blanche, toiture en métal et bardage bois vertical.",
+  "description": "Une maison au style contemporain avec toiture métallique et bardage bois. Le crépi blanc a été posé en respectant les raccords avec le bois et les menuiseries.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/entreprise-d-isolation-thermique.webp",
+    "/img/photos/professionnel-isolation.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

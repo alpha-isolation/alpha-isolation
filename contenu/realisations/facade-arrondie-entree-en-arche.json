@@ -1,0 +1,27 @@
+{
+  "titre": "Façade arrondie et entrée en arche",
+  "publie": true,
+  "ordre": 70,
+  "categorie": "ite",
+  "travaux": [
+    "Isolation par l'extérieur",
+    "Crépi",
+    "Socle anthracite"
+  ],
+  "resume": "Une maison aux formes arrondies : tourelle, angles courbes et entrée en arche.",
+  "description": "Les façades courbes sont parmi les plus exigeantes : l'isolant et le crépi doivent suivre parfaitement chaque arrondi. Ici, tourelle, angles courbes et entrée en arche ont été traités pour un résultat homogène, avec un socle anthracite en pied de mur.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/renovation-de-facade-batiment.webp",
+    "/img/photos/finition-facade-haut-de-gamme.webp",
+    "/img/photos/facade-esthetique.webp",
+    "/img/photos/finition-esthetique-facade.webp",
+    "/img/photos/specialiste-de-renovation-de-facade.webp",
+    "/img/photos/entreprise-de-ravalement-de-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

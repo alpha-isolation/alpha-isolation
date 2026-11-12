@@ -1,0 +1,21 @@
+{
+  "titre": "Rénovation d'une maison de ville",
+  "publie": true,
+  "ordre": 140,
+  "categorie": "renov",
+  "travaux": [
+    "Rénovation de façade",
+    "Échafaudage"
+  ],
+  "resume": "Échafaudage posé pour la rénovation complète d'une façade de maison de ville.",
+  "description": "Rénovation de la façade d'une maison de ville, avec échafaudage sur toute la hauteur. Les encadrements de fenêtres et la porte d'entrée sont protégés pendant les travaux.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/pose-echafaudage-de-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

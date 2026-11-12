@@ -1,0 +1,23 @@
+{
+  "titre": "Nettoyage d'une façade en brique",
+  "publie": true,
+  "ordre": 90,
+  "categorie": "renov",
+  "travaux": [
+    "Nettoyage de façade",
+    "Démoussage"
+  ],
+  "resume": "Nettoyage en hauteur d'une maison en brique, châssis protégés.",
+  "description": "Nettoyage complet d'une façade en brique, en hauteur depuis une nacelle. Les châssis et les abords sont protégés avant l'intervention, et la méthode est adaptée à la brique pour ne pas l'abîmer.",
+  "commune": "",
+  "annee": "",
+  "surface": "",
+  "duree": "",
+  "photos": [
+    "/img/photos/nettoyage-facade-1.webp",
+    "/img/photos/entretien-facade.webp",
+    "/img/photos/nettoyage-de-facade.webp"
+  ],
+  "videos": [],
+  "youtube": []
+}

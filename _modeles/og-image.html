@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- Source de img/og-alpha-isolation.jpg (aperçu WhatsApp / réseaux sociaux), rendue en 1200x630 :
+     msedge --headless --screenshot=og.png --window-size=1200,630 --hide-scrollbars _modeles/og-image.html -->
+<html lang="fr-BE">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/fonts.css">
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:630px;overflow:hidden;background:#000}
+.og{position:relative;width:1200px;height:630px;font-family:'Public Sans',sans-serif;color:#fff}
+.photo{position:absolute;inset:0 0 0 380px;background:url(../img/photos/conception-de-facade-moderne.webp) center 40%/cover}
+.fade{position:absolute;inset:0;background:linear-gradient(90deg,#000 0,#000 380px,rgba(0,0,0,.82) 470px,rgba(0,0,0,.25) 720px,rgba(0,0,0,0) 900px)}
+.txt{position:absolute;left:64px;top:56px;bottom:56px;width:640px;display:flex;flex-direction:column;justify-content:space-between}
+.logo{width:330px;height:auto;display:block}
+h1{font-family:'Jost',sans-serif;font-weight:800;font-size:68px;line-height:1.02;letter-spacing:-.02em}
+h1 em{font-style:normal;color:#8DC63F}
+.sub{margin-top:18px;font-size:27px;color:#E6E6E6;font-weight:500}
+.foot{display:flex;align-items:center;gap:18px}
+.badge{background:#8DC63F;color:#111;font-family:'Jost',sans-serif;font-weight:800;font-size:28px;padding:14px 24px;border-radius:8px}
+.phone{font-family:'Jost',sans-serif;font-weight:700;font-size:30px}
+.bar{position:absolute;left:0;right:0;bottom:0;height:8px;background:#8DC63F}
+</style>
+</head>
+<body>
+<div class="og">
+<div class="photo"></div><div class="fade"></div>
+<div class="txt">
+<img class="logo" src="../img/logo-alpha-isolation.webp" alt="">
+<div>
+<h1>Isolation &amp; rénovation<br>de <em>façade</em></h1>
+<p class="sub">Entreprise familiale · Hainaut et toute la Belgique</p>
+</div>
+<div class="foot"><span class="badge">Devis gratuit sous 72 h</span><span class="phone">0470 17 96 39</span></div>
+</div>
+<div class="bar"></div>
+</div>
+</body>
+</html>
